@@ -2,158 +2,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 .poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
 .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
-  
+
 .poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-style: normal;
 }
-  
-    /*colors*/
+
+/*colors*/
 
 :root {
-    --primary-red: hsl(0, 78%, 62%);
-    --primary-cyan: hsl(180, 62%, 55%);
-    --primary-orange: hsl(34, 97%, 64%);
-    --primary-blue: hsl(212, 86%, 64%);
-    --neutral-grey-500: hsl(234, 12%, 34%);
-    --neutral-grey-400: hsl(212, 6%, 44%);
-    --neutral-white: hsl(0, 0%, 100%);
+	--primary-red: hsl(0, 78%, 62%);
+	--primary-cyan: hsl(180, 62%, 55%);
+	--primary-orange: hsl(34, 97%, 64%);
+	--primary-blue: hsl(212, 86%, 64%);
+	--neutral-grey-500: hsl(234, 12%, 34%);
+	--neutral-grey-400: hsl(212, 6%, 44%);
+	--neutral-white: hsl(0, 0%, 100%);
+
+	--basic-font-size: 15px;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
 }
 
 body {
-  background-color: var(--neutral-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  padding: 50px 20px;
+	background-color: var(--neutral-white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	padding: 50px 20px;
+	font-size: var(--basic-font-size);
 }
 
 header {
-  text-align: center;
-  max-width: 600px;
-  margin-bottom: 60px;
+	text-align: center;
+	max-width: 600px;
+	margin-bottom: 60px;
 }
 
 h1 {
-  color: var(--neutral-grey-400);
-  font-weight: 300;
-  font-size: 32px;
-  margin-bottom: 10px;
+	color: var(--neutral-grey-400);
+	font-weight: 300;
+	font-size: 32px;
+	margin-bottom: 10px;
 }
 
 h2 {
-  color: var(--neutral-grey-500);
-  font-weight: 600;
-  font-size: 28px;
-  margin-bottom: 20px;
+	color: var(--neutral-grey-500);
+	font-weight: 600;
+	font-size: 28px;
+	margin-bottom: 20px;
 }
 
 header p {
-  color: var(--neutral-grey-400);
-  margin-top: 20px;
-  line-height: 1.6;
+	color: var(--neutral-grey-400);
+	margin-top: 20px;
+	line-height: 1.6;
 }
 
+/* mobile layout */
 .tools-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  max-width: 1200px;
-  position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+	max-width: 1115px;
 }
 
-@media (min-width: 375px) {
-  .tools-container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    
-  }
-  
-  .supervisor {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    align-self: center;
-  }
-  
-  .team-builder {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  
-  .karma {
-    grid-column: 2;
-    grid-row: 2;
-  }
-  
-  .calculator {
-    grid-column: 3;
-    grid-row: 1 / span 2;
-    align-self: center;
-  }
+/* desktop layout */
+@media screen and (min-width: 1440px) {
+	.tools-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.supervisor {
+		grid-column: 1;
+		grid-row: 1 / span 2;
+		align-self: center;
+	}
+
+	.team-builder {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.karma {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	.calculator {
+		grid-column: 3;
+		grid-row: 1 / span 2;
+		align-self: center;
+	}
 }
 
 .card {
-  background: var(--neutral-white);
-  border-radius: 8px;
-  padding: 30px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+	background: var(--neutral-white);
+	border-radius: 8px;
+	padding: 30px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+	position: relative;
 }
 
 .card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: var(--neutral-grey-500)
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: var(--neutral-grey-500);
 }
 
 .card p {
-  color: var(--neutral-grey-400);
-  font-size: 14px;
-  margin-bottom: 40px;
+	color: var(--neutral-grey-400);
+	line-height: 1.5;
+	margin-bottom: 40px;
 }
 
-.card img {
-  width: 60px;
-  height: 60px;
-  margin-left: auto;
-  margin-top: auto;
+.card .img {
+	width: 60px;
+	height: 60px;
+	margin-left: auto;
 }
 
-.supervisor {
-  border-top: 4px solid var(--primary-cyan);
+.card::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	height: 4px;
 }
 
-.team-builder {
-  border-top: 4px solid var(--primary-red);
+.supervisor::before {
+	background: var(--primary-cyan);
 }
 
-.karma {
-  border-top: 4px solid var(--primary-orange);
+.team-builder::before {
+	background: var(--primary-red);
 }
 
-.calculator {
-  border-top: 4px solid var(--primary-blue);
+.karma::before {
+	background: var(--primary-orange);
+}
+
+.calculator::before {
+	background: var(--primary-blue);
 }
