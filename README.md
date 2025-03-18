@@ -50,5 +50,5 @@ This project displays a simple **Four Card Feature Section**, where each card re
 
 ---
 ### 📌 Challenge by [Frontend Mentor](https://www.frontendmentor.io/)
-### 💻 Coded by [Mohit Bhatia](https://x.com/Mohit___Bhatia) (Replace `#` with your profile link)
+### 💻 Coded by [Mohit Bhatia](https://x.com/Mohit___Bhatia) 
 
